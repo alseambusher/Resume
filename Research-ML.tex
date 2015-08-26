@@ -1,0 +1,129 @@
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0.4em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{2pt}{0pt} % Spacing around sections
+\addtolength{\textheight}{+5in}
+\addtolength{\voffset}{-1.5cm}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\huge Suresh \textsc{Alse}}\bigskip\par} % Your name
+
+\begin{tabular}{rl}
+\textsc{Email:} & \href{mailto:alse@usc.edu}{alse@usc.edu}\\
+\end{tabular}
+\hfill
+\begin{tabular}{rl}
+\textsc{Phone:} & (213) 258-7664\\
+\end{tabular}
+\hfill
+\begin{tabular}{rl}
+\textsc{Blog:} & \href{http://lifepluslinux.blogspot.in}{Life Plus Linux}
+\end{tabular}
+
+\begin{tabular}{rl}
+\textsc{Links:} & \href{http://github.com/alseambusher}{Github} | \href{http://in.linkedin.com/pub/suresh-alse/4a/956/682}{LinkedIn} | \href{http://alseambusher.github.io}{Website} 
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\renewcommand{\arraystretch}{0.98}% Tighter
+\begin{tabular}{rl}	
+
+\textsc{Current} & MS, Computer Science (Data Science)\\
+&\textbf{University of Southern California}, Los Angeles\\
+\\
+
+\textsc{May} 2014 & BTech, Information Technology\\
+&\textbf{National Institute of Technology Karnataka}, Surathkal \hspace{2cm} \textbf{GPA: 4.0}
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+\renewcommand{\arraystretch}{0.75}% Tighter
+\begin{tabular}{r|p{11cm}}
+\textsc{Aug '14 - Aug '15} & Software Development Engineer, \textbf{Intuit Inc.} \\
+& \footnotesize{Worked on core development of \textsc{QuickBooks}, an accounting software used by several million users all over the world.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{May - July '13} & Summer Intern, \textbf{Intuit Inc.}\\ 
+& \footnotesize{Worked with \textsc{QuickBooks} android  team and developed a code generator that can automatically generate JAVA code for new features based on old features with minimum or no human intervention.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Nov - Dec '12} & Intern, \textbf{Bilent.}\\
+& \footnotesize{Worked on \textsc{Kyash} which is an online payment system which helps people to
+work in mutually beneficial and trusted environment.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{May - July '12} & Summer Intern, \textbf{Indibits Web and Business Solutions.}\\
+& \footnotesize{Worked on an open-source wiki application.}
+\end{tabular}
+
+\section{Relavent Projects}
+\begin{itemize}
+ \item \textbf{Social Event Detection using Multimodal clustering} - I discovered event-related miltimodal multimedia and organized them in event-specific clusters. SIFT features were extracted from images to represent them numerically. Then I used a supervisory signal and SVM to perform multimodal clustering. This approach essentially achieves “supervised fusion” of hetrogeneous features and retrieves clusters that are related to social events.
+ \item \textbf{Call center data analysis} - This involved analysis of Intuit's crucial call center data to minimize the number of calls made by customers. I extracted noun phrases from the customers’ problems and clustered similar problems. I was able to generate patterns that could predict the problems that customers may face in future, thus preventing them from making multiple calls.
+ \item \textbf{Columbus, Discovering composite Web Services} - Using features in WSDL, similarities between web services are obtained and they are clustered using k-means. Tags are generated for a web service from neighbors orfrom their WSDL. These tags help in reducing the number of web services considered for service composition for a request. A service dependency graph (SDG) is generated. Composite services are discovered by a search algorithm in SDG which captures the input output dependencies among the services.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+\renewcommand{\arraystretch}{1}% Normal
+\begin{tabular}{rl}
+
+Programming Languages: &  C++, Java, Python, Lisp and PHP\\
+Technologies: & Matlab, Octave, ns2, node \\
+Operating Systems: & Windows, Mac and Linux
+
+\end{tabular}
+
+
+\section{Publications}
+
+\begin{itemize}
+\item Alse, S, et al, ``A State Transition Based Approach to Recognize Gestures Using Multi-Level Color Tracking'', 2nd International Conference on Advances in Computing, Communications and Informatics, IEEE International Publishing, 2013, 704-708.
+\item Alse, S, et al, ``A Real Time Multiplayer Gaming Network Platform as a Service'', Eighth International Conference on Computer communication networks (ICCN 2014), Elsevier International Publishing, 2014, Ch 19.
+\item Alse, S, et al, ``Automatic Generation of Web Service Composition Templates Using WSDL Descriptions'', 2nd International Conference on Information Systems Design and Intelligent Applications, Springer India, 2015, 2194-5357.
+\end{itemize}
+%----------------------------------------------------------------------------------------
+
+\end{document}
