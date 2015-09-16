@@ -1,0 +1,133 @@
+
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0.4em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+\addtolength{\textheight}{+5in}
+\addtolength{\voffset}{-1.8cm}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+{\centering{\huge Suresh \textsc{Alse}}\par} % Your name
+\begin{tabular}{rl}
+\textsc{Email:} & \href{mailto:alse@usc.edu}{alse@usc.edu}\\
+\end{tabular}
+\hfill
+\begin{tabular}{rl}
+\textsc{Phone:} & (213) 258-7664\\
+\end{tabular}
+\hfill
+\begin{tabular}{rl}
+\textsc{Blog:} & \href{http://lifepluslinux.blogspot.in}{Life Plus Linux}
+\end{tabular}
+
+\begin{tabular}{rl}
+\textsc{Links:} & \href{http://github.com/alseambusher}{Github} | \href{http://in.linkedin.com/pub/suresh-alse/4a/956/682}{LinkedIn} | \href{http://alseambusher.github.io}{Website} 
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{tabular}{rl}	
+
+\textsc{Current} & MS, Computer Science\\
+&\textbf{University of Southern California}, Los Angeles\\
+\\
+\textsc{May} 2014 & BTech, Information Technology\\
+&\textbf{National Institute of Technology Karnataka}, Surathkal \hspace{2cm} \textbf{GPA: 4.0}
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+\renewcommand{\arraystretch}{0.85}% Tighter
+\begin{tabular}{r|p{11cm}}
+\textsc{Aug '14 - Aug '15} & Software Development Engineer, \textbf{Intuit Inc.} \\
+& \footnotesize{Worked on core development of \textsc{QuickBooks}, an accounting software used by several million users all over the world.}\\
+\footnotesize{Tech stack} &\footnotesize{C++, C\#, .NET, MFC, Agile Development.} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{May - July '13} & Summer Intern, \textbf{Intuit Inc.}\\ 
+& \footnotesize{Worked with \textsc{QuickBooks} android  team and developed a code generator that can generate java code for new features based on old features automatically.}\\
+\footnotesize{Tech stack} &\footnotesize{Java, SWT, Android Development.} \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Nov - Dec '12} & Intern, \textbf{Bilent.}\\
+& \footnotesize{Worked on \textsc{Kyash} which is an online payment system which helps people to
+work in mutually beneficial and trusted environment.}\\
+\footnotesize{Tech stack} &\footnotesize{Python, webapp2, Google Appengine.} \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{May - July '12} & Summer Intern, \textbf{Indibits Web and Business Solutions.}\\
+& \footnotesize{Worked on an open-source wiki application.}\\
+\footnotesize{Tech stack} &\footnotesize{HTML5, CSS3, JS, PHP.} \\
+\end{tabular}
+
+\section{Relavent Projects}
+\begin{itemize}
+ \item \textbf{Social Event Detection} - I built a python based tool that can automatically detect social events using Multimodal clustering. I discovered event-related miltimodal multimedia and organized them in event-specific clusters. SIFT features were extracted from images to represent them numerically. Then I used a supervisory signal and SVM to perform multimodal clustering. This approach essentially achieves “supervised fusion” of hetrogeneous features and retrieves clusters that are related to social events.\\
+ \href{https://github.com/alseambusher/SED}{https://github.com/alseambusher/SED}
+ \item \textbf{Jarvis} - This is a Human Computer Interaction tool in python using which it is possible to control your Linux system using hand gestures. In order to accommodate any gesture defined by the user, I developed a technique to do so and published a paper titled ‘A State Transition Based Approach to Recognize Gestures Using Multi-level Color Tracking’ at ICACCI- 2013 \\
+ \href{https://github.com/alseambusher/jarvis}{https://github.com/alseambusher/jarvis}
+ \item \textbf{A Real Time Multiplayer Gaming Network Platform as a Service} - As multiplayer games are becoming more and more complex, there is a need of a simpler way for game developers to manage network. I built a network framework in C++ and Python using which issues such as latency, load balancing, bad connectivity etc. can be addressed through a service. The new architecture involves Game server, API server, Clients and ZeroMQ as network protocol to manage the network during the gameplay.\\
+ \href{https://github.com/alseambusher/Easy-Multi-Player}{https://github.com/alseambusher/Easy-Multi-Player}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+\renewcommand{\arraystretch}{1}% Normal
+\begin{tabular}{rl}
+
+Programming Languages: &  C++, Java, Python, Ruby and PHP\\
+Technologies: & Matlab, Octave, ns2, node \\
+Operating Systems: & Windows, Mac and Linux
+
+\end{tabular}
+
+
+\section{Publications}
+\begin{itemize}
+\item Alse, S, et al, ``A State Transition Based Approach to Recognize Gestures Using Multi-Level Color Tracking'', 2nd ICACCI, IEEE International Publishing, 2013, 704-708.
+\item Alse, S, et al, ``A Real Time Multiplayer Gaming Network Platform as a Service'', 8th ICCN, Elsevier International Publishing, 2014, Ch 19.
+\item Alse, S, et al, ``Automatic Generation of Web Service Composition Templates Using WSDL Descriptions'', 2nd International Conference on Information Systems Design and Intelligent Applications, Springer India, 2015, 2194-5357.
+\end{itemize}
+%----------------------------------------------------------------------------------------
+
+\end{document}
