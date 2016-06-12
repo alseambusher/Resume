@@ -34,132 +34,18 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 {\centering{\huge Suresh \textsc{Alse}}\par} % Your name
-\begin{tabular}{rl}
-\textsc{Email:} & alse@usc.edu\\
-\end{tabular}
-\hfill
-\begin{tabular}{rl}
-\textsc{\hspace{2.0cm}Phone:} & (213) 258-7664\\
-\end{tabular}
-\hfill
-\begin{tabular}{rl}
-\textsc{Blog:} & \href{lifepluslinux.blogspot.com}{lifepluslinux.blogspot.com}\\
-\end{tabular}
-%
-\begin{tabular}{rl}
-\textsc{Links:} & \href{http://github.com/alseambusher}{github.com/alseambusher} \hspace{.5cm}|\hspace{.5cm} \href{http://linkedin.com/in/sureshalse}{linkedin.com/in/sureshalse} \hspace{.5cm}|\hspace{.3cm} \href{alseambusher.github.io}{alseambusher.github.io} 
-\end{tabular}
-%---------------------------------------------------------------
-% REMOVE this for with links
-%---------------------------------------------------------------
- %\begin{tabular}{rl}
- %\textsc{Email:} & \href{mailto:alse@usc.edu}{alse@usc.edu}\\
- %\end{tabular}
- %\hfill
- %\begin{tabular}{rl}
- %\textsc{Phone:} & (213) 258-7664\\
- %\end{tabular}
- %\hfill
- %\begin{tabular}{rl}
- %\textsc{Blog:} & \href{http://lifepluslinux.blogspot.com}{lifepluslinux.blogspot.com}
- %\end{tabular}
- 
- %\begin{tabular}{rl}
- %\textsc{Links:} & \href{http://github.com/alseambusher}{Github} | \href{https://www.linkedin.com/in/sureshalse}{LinkedIn} | \href{http://alseambusher.github.io}{Website} 
- %\end{tabular}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+\input{Contact.tex}
 
-\section{Education}
-\begin{tabular}{rl}	
+\input{Education.tex}
 
-\textsc{Dec 2016} & MS, Computer Science\\
-&\textbf{University of Southern California}, Los Angeles%\hspace{2.8cm} GPA: 3.65
-\\
-\textsc{May} 2014 & BTech, Information Technology\\
-&\textbf{National Institute of Technology Karnataka}, India%\hspace{2cm} GPA: 4.0
+\input{Work.tex}
 
-\end{tabular}
+\input{Projects.tex}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
-%----------------------------------------------------------------------------------------
+\input{'Technical Skills.tex'}
 
-\section{Work Experience}
-\renewcommand{\arraystretch}{0.85}% Tighter
-\begin{tabular}{r|p{13cm}}
-\textsc{Jan '16 - Current} & Student Researcher, \textbf{Information Sciences Institute} \\
-& \small{Working on a python based REST service for Karma, an information integration tool – to automatically assign semantics to large data sets from heterogeneous sources based on their features using several Statistical and Machine Learning techniques.}\\
-\small{Tech stack} &\footnotesize{\textbf{Python, Machine Learning, AI, Flask, Spark, Elastic search.}} \\
-\multicolumn{2}{c}{} \\
-
-
-\textsc{Aug '14 - Aug '15} & Software Development Engineer, \textbf{Intuit Inc.} \\
-& \small{Worked on core development of \textsc{QuickBooks}, an accounting software used by several million users all over the world. I effeciently drove several initiatives in QB core.}\\
-\small{Tech stack} &\footnotesize{\textbf{C++, C\#, .NET, MFC, Agile Development.}} \\
-\multicolumn{2}{c}{} \\
-
-\textsc{May - July '13} & Summer Intern, \textbf{Intuit Inc.}\\ 
-& \small{Worked with \textsc{QuickBooks} android  team and developed a code generator that can generate java code for new features based on old features automatically which in turn reduced development, testing and mainteinance time to a great extent.}\\
-\small{Tech stack} &\footnotesize{\textbf{Java, SWT, Android Development.}}\\
-
-%------------------------------------------------
-
-%\textsc{Nov - Dec '12} & Intern, \textbf{Bilent.}\\
-%& \small{Worked on \textsc{Kyash} which is an online payment system which helps people to
-%work in mutually beneficial and trusted environment.}\\
-%\small{Tech stack} &\footnotesize{Python, webapp2, Google Appengine.} \\
-%\multicolumn{2}{c}{} \\
-
-
-\end{tabular}
-
-\section{Relevant Projects}
-\begin{itemize}
- \item \textbf{Pai-deia} | \href{http://alseambusher.github.io/Paideia}{alseambusher.github.io/Paideia} | \textbf{Java, C++, Android, Deep Learning}\\ 
- This is a Deep Learning based android app that uses Tensorflow and detects objects around you though camera and maps it into one of the classes in Imagenet and then pulls more information about what the user is seeing from Wikipedia and Wolfram Alpha. The results are also tweaked based on a learning model that monitors user's activity and shows more relevant content over time.
- 
- \item \textbf{Jarvis} | \href{http://github.com/alseambusher/jarvis}{github.com/alseambusher/jarvis} | \textbf{Python, opencv, gtk}\\ 
- This is a Human Computer Interaction tool in python using which it is possible to control your Linux system using hand gestures. Users can add their own gestures and assign custom actions using a gtk ui. In order to accommodate any gesture defined by the user, I developed a state transition based approach to do so and published a paper at ICACCI- 2013. 
- %\href{https://github.com/alseambusher/jarvis}{https://github.com/alseambusher/jarvis}
- %\item \textbf{QuickFoods} \\ This is an innovative app for hotels to manage their orders with ease even in rush hours. It mainly aims at reducting the time taken to complete the order cycle by bridging the gap between waiters and kitchen. This was built in Intuit LABS and received a lot traction from several five star hotels.
- 
- \item \textbf{Crontab-ui} | \href{http://npmjs.com/package/crontab-ui}{npmjs.com/package/crontab-ui} | \textbf{JavaScript, node.js}\\
- This is a node.js tool available through npm that can be used to manage cron jobs across systems very easily. With features such as import, export, backup, error logging of jobs, this is an end-to-end tool to manage crontab efficiently. This is being used by over thousand people including several companies.
- 
- \item \textbf{Columbus} | \href{http://github.com/alseambusher/columbus}{github.com/alseambusher/columbus} | \textbf{Python, Machine Learning}\\
- A python based service discovery tool using which we can combine web services automatically to perform composite tasks. Using techniques such as web crawling, feature extraction, k-means clustering, a Service dependency graph (SDG) is generated. Composite services are discovered by a search algorithm in this SDG.
- 
- %\item \textbf{Social Event Detection} | \href{http://github.com/alseambusher/SED}{github.com/alseambusher/SED}\\ 
- %I built a python based tool that can automatically detect social events using Multimodal clustering. I obtained event-related miltimodal multimedia and organized them in event-specific clusters. This approach essentially achieves “supervised fusion” of hetrogeneous features and retrieves clusters that are related to social events.
-%\href{https://github.com/alseambusher/SED}{https://github.com/alseambusher/SED} 
- %\item \textbf{A Real Time Multiplayer Gaming Network Platform as a Service} - As multiplayer games are becoming more and more complex, there is a need of a simpler way for game developers to manage network. I built a network framework in C++ and Python using which issues such as latency, load balancing, bad connectivity etc. can be addressed through a service.\\
- %\textit{Code: github.com/alseambusher/Easy-Multi-Player}
- %\href{https://github.com/alseambusher/Easy-Multi-Player}{https://github.com/alseambusher/Easy-Multi-Player}
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS 
-%----------------------------------------------------------------------------------------
-
-\section{Technical Skills}
-\renewcommand{\arraystretch}{1}% Normal
-\begin{tabular}{rl}
-
-Programming Languages: &  Python, Java, JavaScript, C/C++ \\
-Web frameworks: & node.js, webapp2, django, React, SASS\\
-Others: & Android, Machine learning, Artificial Intelligence \\
-\end{tabular}
-
-\newcommand\textlcsc[1]{\textsc{\MakeTextLowercase{#1}}}
-\section{Publications - \normalsize{Google Scholar: }\textup{https://goo.gl/DZFPZA}}
-\begin{itemize}
-\item Alse, S, et al, ``A State Transition Based Approach to Recognize Gestures Using Multi-Level Color Tracking'', 2nd ICACCI, IEEE International Publishing, 2013, 704-708.
-\item Alse, S, et al, ``A Real Time Multiplayer Gaming Network Platform as a Service'', 8th ICCN, Elsevier International Publishing, 2014, Ch 19.
-\item Alse, S, et al, ``Automatic Generation of Web Service Composition Templates Using WSDL Descriptions'', 2nd International Conference on Information Systems Design and Intelligent Applications, Springer India, 2015.
-\end{itemize}
+\input{Publications.tex}
 %----------------------------------------------------------------------------------------
 
 \end{document}

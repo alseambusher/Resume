@@ -1,2 +1,5 @@
 *~
 *.backup
+*.aux
+*.log
+*.out
