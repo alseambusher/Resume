@@ -4,4 +4,3 @@
 *.log
 *.out
 .DS_Store
-build

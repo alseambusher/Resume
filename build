@@ -1,0 +1,8 @@
+#!/bin/bash
+
+xelatex main-pub.tex
+xelatex main-tech.tex
+
+rm *.aux
+rm *.log
+rm *.out
